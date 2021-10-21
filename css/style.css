@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+}
+
+.main-game {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-game h1 {
+  margin-bottom: 20%;
+}
+
+.genius {
+  width: 70vw;
+  height: 70vw;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "green red" "yellow blue";
+  grid-gap: 2%;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.blue {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: blue;
+  background-color: #0909ea;
+  border-bottom-right-radius: 100%;
+}
+
+.red {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: red;
+  background-color: #db0101;
+  border-top-right-radius: 100%;
+}
+
+.green {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: green;
+  background-color: #067906;
+  border-top-left-radius: 100%;
+}
+
+.yellow {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: yellow;
+  background-color: #d9d916;
+  border-bottom-left-radius: 100%;
+}
+
+.selected {
+  opacity: 50%;
+}
+/*# sourceMappingURL=style.css.map */
