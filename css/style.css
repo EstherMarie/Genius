@@ -7,11 +7,14 @@
 
 body {
   background-color: aquamarine;
+  overflow-x: hidden;
 }
 
 .main-game {
   height: 100vh;
   width: 100vw;
+  padding: 0 10%;
+  margin: 5% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,21 +22,45 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .main-game h1 {
-  margin-bottom: 20%;
+  margin-bottom: 5%;
+}
+
+.alert {
+  height: 10%;
+  width: 100%;
+  padding: 5%;
+  margin-bottom: 5%;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.692);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.alert p {
+  width: 70%;
+  text-align: center;
+}
+
+.alert button {
+  width: 20%;
+  margin-left: auto;
 }
 
 .genius {
-  width: 70vw;
-  height: 70vw;
+  width: 100%;
+  height: calc(100vw - 10%);
   display: -ms-grid;
   display: grid;
       grid-template-areas: "green red" "yellow blue";
@@ -77,5 +104,13 @@ body {
 
 .selected {
   opacity: 50%;
+}
+
+@media (max-width: 650px) {
+  .main-game {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 /*# sourceMappingURL=style.css.map */
