@@ -1,5 +1,7 @@
 # Genius
 
+![badge-andamento](https://img.shields.io/badge/Status-WIP-yellow)
+
 > Jogo da memória estilo Genius criado para o bootcamp da Digital Innovation One
 
 ## Sobre
